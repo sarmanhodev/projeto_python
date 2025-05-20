@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assuntos</title>
+</head>
+<body>
+    <h2>Lista de Assuntos</h2>
+    <ul>
+        {% for item in assuntos %}
+            <li><span>Id: {{ item.numIdAssunto }}</span> - <span>Assunto: {{ item.assunto }}</span></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
